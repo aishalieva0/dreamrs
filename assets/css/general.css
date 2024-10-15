@@ -76,3 +76,92 @@
   color: #f73347;
   transition: 0.5s;
 }
+
+/* Footer */
+.footer {
+  background-color: #030305;
+  margin-top: 30px;
+}
+
+.footer a,
+.footer p,
+.footer li {
+  color: #a2a2a2;
+  font-size: 14px;
+}
+
+.footer p {
+  line-height: 1.8;
+}
+
+.footer h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.footerTop {
+  border-bottom: 1px solid #606060;
+  padding: 50px 0 10px;
+}
+
+.footerMiddle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 0 40px;
+}
+
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid #606060;
+  padding: 25px 0;
+}
+
+.footerAbout,
+.footerContact,
+.footerLink,
+.footerNewsletter {
+  width: 21%;
+}
+
+.footerAbout .socialList {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.footerContact .contactItem,
+.footerLink .linkItem {
+  margin: 0 0 10px;
+}
+
+.footerNewsletter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footerNewsletter .footerForm {
+  position: relative;
+  margin-top: 30px;
+}
+
+.footerNewsletter .footerForm input {
+  padding: 10px 37px;
+  border-radius: 20px;
+  outline: none;
+  border-style: none;
+}
+
+.footerNewsletter .footerForm button {
+  position: absolute;
+  padding: 10px 25px;
+  right: 4px;
+  border-radius: 20px;
+  background-color: #ff3334;
+  color: #fff;
+  border-style: none;
+}

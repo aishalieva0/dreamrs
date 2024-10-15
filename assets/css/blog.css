@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Title */
+
+.blogBg {
+  position: relative;
+}
+
+.blogTitle {
+  background-image: url(../img/blog/blog_bg.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.blogTitle h2 {
+  color: #fff;
+  font-size: 72px;
+  text-align: center;
+  position: absolute;
+  left: 42%;
+  top: 33%;
+  z-index: 1;
+}
+
+.blogBg::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 85%;
+  /* z-index: 1 ; */
+  background: -webkit-linear-gradient(
+    10deg,
+    #eb4646 0%,
+    rgba(18, 1, 248, 0.2) 100%
+  );
+}
+
+/* Blog */
+.row {
+  display: flex;
+}
+
+.leftSide {
+  width: 70%;
+}
+
+.rightSide {
+  width: 33%;
+}
+
+/* Single Blog */
+.singleBlog {
+  margin-bottom: 50px;
+}
+.blogImg {
+  position: relative;
+}
+
+.blogImg a {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  left: 43px;
+  bottom: -13px;
+  background-color: #ff3334;
+  color: #fff;
+  border-radius: 5px;
+  padding: 14px 23px;
+  width: 93px;
+  height: 96px;
+}
+
+.blogImg span:first-child {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.blogImg span:last-child {
+  font-size: 18px;
+}
+
+.info {
+  padding: 20px;
+  width: 96%;
+  box-shadow: #eeeeeed1 0px 15px 20px 19px;
+}
+
+.info h2 {
+  color: #000;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+.infoLink {
+  display: flex;
+  font-size: 14px;
+}
+
+.infoLink li:first-child {
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+
+.linkItem {
+  margin-right: 15px;
+}
+
+.linkItem a {
+  color: #a0a0a0;
+}
+
+.info h2:hover,
+.linkItem a:hover {
+  color: #dc3545;
+  transition: 0.5s;
+}
+
+.linkItem a i {
+  margin-right: 5px;
+}
+
+/* Pagination */
+.paginationList {
+  display: flex;
+  justify-content: center;
+}
+
+.paginationItem {
+  border: 1px solid #edecec;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.paginationItem a {
+  color: #5e5e5e;
+}
+
+.paginationItem:hover {
+  background-color: #d5c7c7;
+  transition: 0.5s;
+}
+
+/* right sidebar */
+.containerSideBar {
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: #fbf9ff;
+}
+
+.containerSideBar h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+}
+
+/* 
+Search bar
+Newsletter
+*/
+.formSearch,
+.formNewsletter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search input,
+.newsletter input {
+  margin-bottom: 10px;
+  padding: 14px 10px;
+  border: 1px #e4e2ea solid;
+}
+
+.search i {
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  color: #c4c4c4;
+}
+
+.search input:focus,
+.newsletter input:focus {
+  outline: none;
+}
+
+.search button,
+.newsletter button {
+  padding: 15px 10px;
+  background-color: #ff3334;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-style: none;
+}
+
+/* Category */
+.catItem {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 5px;
+}
+
+.catItem:last-child {
+  border-bottom: none;
+}
+
+.catItem a {
+  color: #5c5c5c;
+}
+
+.catItem a:hover {
+  color: #dc3545;
+  transition: 0.5s;
+}
+
+/* Recent Post */
+
+.post {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+.postImg {
+  margin-right: 15px;
+}
+
+.postDetails a {
+  color: #454444;
+}
+
+.postDetails span {
+  color: #666666;
+}
+
+.postDetails a:hover {
+  color: #dc3545;
+  transition: 0.5s;
+}
+
+/* Tag Clouds */
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tagItem {
+  background-color: #fff;
+  border: 1px solid #edecec;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 9px;
+}
+
+.tagItem a {
+  color: #8d8c8c;
+}
+
+/* Instagram Feeds */
+.feedList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedItem {
+  padding: 7px;
+}

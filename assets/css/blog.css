@@ -206,3 +206,21 @@
   color: #dc3545;
   transition: 0.5s;
 }
+
+/* Tag Clouds */
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tagItem {
+  background-color: #fff;
+  border: 1px solid #edecec;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 9px;
+}
+
+.tagItem a {
+  color: #8d8c8c;
+}

@@ -224,3 +224,13 @@
 .tagItem a {
   color: #8d8c8c;
 }
+
+/* Instagram Feeds */
+.feedList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedItem {
+  padding: 7px;
+}

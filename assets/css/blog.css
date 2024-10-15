@@ -131,14 +131,19 @@
   padding-bottom: 9px;
 }
 
-/* Search bar */
-.formSearch {
+/* 
+Search bar
+Newsletter
+*/
+.formSearch,
+.formNewsletter {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.search input {
+.search input,
+.newsletter input {
   margin-bottom: 10px;
   padding: 14px 10px;
   border: 1px #e4e2ea solid;
@@ -151,11 +156,13 @@
   color: #c4c4c4;
 }
 
-.search input:focus {
+.search input:focus,
+.newsletter input:focus {
   outline: none;
 }
 
-.search button {
+.search button,
+.newsletter button {
   padding: 15px 10px;
   background-color: #ff3334;
   color: #fff;

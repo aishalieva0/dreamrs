@@ -163,3 +163,22 @@
   font-weight: 600;
   border-style: none;
 }
+
+/* Category */
+.catItem {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 5px;
+}
+
+.catItem:last-child {
+  border-bottom: none;
+}
+
+.catItem a {
+  color: #5c5c5c;
+}
+
+.catItem a:hover {
+  color: #dc3545;
+  transition: 0.5s;
+}

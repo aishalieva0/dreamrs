@@ -1,11 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
 .container {
   width: 85%;
   margin: 0 auto;
@@ -96,9 +88,10 @@
 }
 
 .info {
-  padding: 20px;
+  padding: 35px 20px;
+  margin-top: -6px;
   width: 96%;
-  box-shadow: #eeeeeed1 0px 15px 20px 19px;
+  box-shadow: #eeeeeed1 -6px 9px 20px 0px;
 }
 
 .info h2 {
@@ -134,7 +127,7 @@
 
 .info h2:hover,
 .linkItem a:hover {
-  color: #dc3545;
+  color: #ff3334;
   transition: 0.5s;
 }
 
@@ -233,7 +226,7 @@ Newsletter
 }
 
 .catItem a:hover {
-  color: #dc3545;
+  color: #ff3334;
   transition: 0.5s;
 }
 
@@ -250,6 +243,7 @@ Newsletter
 
 .postDetails a {
   color: #454444;
+  font-size: 14px;
 }
 
 .postDetails span {
@@ -257,7 +251,7 @@ Newsletter
 }
 
 .postDetails a:hover {
-  color: #dc3545;
+  color: #ff3334;
   transition: 0.5s;
 }
 
@@ -277,6 +271,13 @@ Newsletter
 
 .tagItem a {
   color: #8d8c8c;
+  font-size: 13px;
+}
+
+.tagItem:hover,
+.tagItem a:hover {
+  background-color: #ff3334;
+  color: #fff;
 }
 
 /* Instagram Feeds */

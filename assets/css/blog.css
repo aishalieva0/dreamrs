@@ -142,6 +142,28 @@
   margin-right: 5px;
 }
 
+/* Pagination */
+.paginationList {
+  display: flex;
+  justify-content: center;
+}
+
+.paginationItem {
+  border: 1px solid #edecec;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.paginationItem a {
+  color: #5e5e5e;
+}
+
+.paginationItem:hover {
+  background-color: #d5c7c7;
+  transition: 0.5s;
+}
+
 /* right sidebar */
 .containerSideBar {
   padding: 25px;

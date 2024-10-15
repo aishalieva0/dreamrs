@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Title */
+
+.titleBg {
+  background-image: url(../img/blog/blog_bg.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.titleBg h2 {
+  color: #fff;
+  font-size: 72px;
+  text-align: center;
+  position: absolute;
+  left: 42%;
+  top: 33%;
+}
+
+

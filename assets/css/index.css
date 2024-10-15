@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.logoImage {
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.navList {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 14px;
+  color: #181919;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.dropbtn {
+  color: #181919;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #f73347;
+  transition: 0.5s;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("https://preview.colorlib.com/theme/dreamrs/img/banner_overlay.png.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden !important;
+}
+
+.hero:after,
+.breadcrumb:after {
+  background: -webkit-linear-gradient(
+    5deg,
+    #f73347 0%,
+    rgba(18, 1, 248, 0.2) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    5deg,
+    #f73347 0%,
+    rgba(18, 1, 248, 0.2) 100%
+  );
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.heroContent {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+  width: 60%;
+}
+
+.heroContent h2 {
+  font-size: 72px;
+}
+
+.heroContent p {
+  font-size: 16px;
+  line-height: 2.25;
+  margin-top: 40px;
+}
+
+.aboutUs {
+  position: relative;
+  z-index: 99;
+  padding: 100px 0;
+}
+
+.aboutTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aboutTitle span {
+  color: #f73347;
+}
+
+.aboutRight h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.aboutRight h2 span {
+  color: #f73347;
+}
+
+.aboutRight p {
+  font-size: 14px;
+}
+
+.aboutBody {
+  display: flex;
+}
+
+.aboutRight {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+  padding-left: 120px;
+}
+
+.aboutUs .aboutBodyImage:after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 60%;
+  top: 250px;
+  left: 470px;
+  background-image: url("https://preview.colorlib.com/theme/dreamrs/img/patten_bg.png.webp");
+  z-index: -1;
+}
+
+.line {
+  width: 100px;
+  height: 1px;
+  background-color: #f73347;
+  margin: 40px 0;
+}
+
+.learnBtn {
+  width: 55%;
+  padding: 19px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #f4f4f4;
+  color: #000;
+
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.learnBtn:hover {
+  background-color: #ff3334;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.counter {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.counterElement span {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.ourProjectTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.line2 {
+  width: 150px;
+  height: 1px;
+  background-color: #000;
+  margin-left: 50px;
+}
+
+.ourProjectTitle h2 span {
+  color: #ff3334;
+}
+
+.ourProjectHeading h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.ourProjectLinks {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ourProjectLinks a {
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+  padding: 8px 15px;
+  margin-right: 22px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.ourProjectLinks a:hover {
+  color: #ff3334;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ourProjectLinks a:active {
+  border: 1px solid #ff3334;
+  background-color: #ff3334;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolioBox {
+  position: relative;
+}
+
+ .info {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  padding: 17px 40px;
+}
+
+

@@ -182,3 +182,27 @@
   color: #dc3545;
   transition: 0.5s;
 }
+
+/* Recent Post */
+
+.post {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+.postImg {
+  margin-right: 15px;
+}
+
+.postDetails a {
+  color: #454444;
+}
+
+.postDetails span {
+  color: #666666;
+}
+
+.postDetails a:hover {
+  color: #dc3545;
+  transition: 0.5s;
+}

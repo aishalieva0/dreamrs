@@ -430,7 +430,7 @@ ul li {
 
 .apartmentsLeft,
 .apartmentsRight {
-  max-width: 48%;
+  max-width: 100%;
 }
 
 .apartmentsLeft img,
@@ -468,7 +468,6 @@ ul li {
 .blogCard {
   margin-top: 50px;
   border: 1px solid #000;
-
   background-color: #fff;
   padding: 30px;
 }

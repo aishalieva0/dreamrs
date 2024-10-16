@@ -27,6 +27,7 @@ ul li {
   width: 100%;
 }
 
+
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -81,6 +82,7 @@ ul li {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  background-color: #fff
 }
 
 .dropdown:hover .dropdown-content {
@@ -100,7 +102,7 @@ ul li {
   background-image: url("https://preview.colorlib.com/theme/dreamrs/img/banner_overlay.png.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
+  z-index: -50;
   overflow: hidden !important;
 }
 
@@ -124,7 +126,7 @@ ul li {
   content: "";
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -10;
 }
 
 .heroContent {
@@ -132,6 +134,7 @@ ul li {
   font-size: 35px;
   font-weight: 400;
   width: 60%;
+  z-index: -10;
 }
 
 .heroContent h2 {
@@ -253,8 +256,14 @@ ul li {
 }
 
 .ourProjectHeading h2 {
+  margin-top: 50px;
+  width: 40%;
   font-size: 36px;
   font-weight: 700;
+}
+
+.ourProjectHeading h2 span {
+  color: #ff3334;
 }
 
 .ourProjectLinks {
@@ -281,19 +290,194 @@ ul li {
   border: 1px solid #ff3334;
   background-color: #ff3334;
   color: #fff;
-  -webkit-transition: 0.5s;
+
   transition: 0.5s;
 }
 
 .portfolioBox {
   position: relative;
+  width: 80%; /* Ensure consistent width */
+  max-width: 100%;
 }
 
- .info {
+.portfolioRight {
+  margin-top: -210px;
+  display: flex;
+  flex-direction: column; /* Stack the boxes vertically */
+  gap: 100px; /* Add spacing between the right-side cards */
+}
+
+.info {
   position: absolute;
   background-color: #fff;
   bottom: 0;
   padding: 17px 40px;
 }
 
+.info p {
+  font-size: 14px;
+  color: #ff3334;
+}
 
+.info h4 a {
+  font-size: 20px;
+  display: inline-block;
+  width: 70%;
+}
+
+.singlePortfolio {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.singlePortfolio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ourProjectBoxes {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between; /* Ensure even distribution */
+}
+
+.ourServices {
+  margin-top: 100px;
+}
+
+.servicesTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.servicesTitle h2 span {
+  color: #ff3334;
+}
+
+.ourServices {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+
+.ourServicesLeftCards1 {
+  margin-top: 50px;
+}
+
+.ourServicesLeftCard {
+  padding: 35px;
+  margin-top: 30px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.ourServicesLeftCardHeading {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.ourServicesLeftCard h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ourServicesLeftCard p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.ourServicesLeftCards {
+  display: flex;
+  gap: 30px;
+}
+
+.ourServicesRight h2 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 34px;
+  font-weight: 700;
+  line-height: 51px;
+}
+
+.ourServicesRight h2 span {
+  color: #ff3334;
+  font-weight: 400;
+}
+
+.ourServicesRight p {
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.apartments {
+  margin-top: 100px;
+  width: 100vw; /* Full viewport width */
+  overflow-x: hidden; //Prevent horizontal scrolling
+}
+
+.apartmentsContent {
+  margin-top: 50px;
+  display: flex;
+
+  max-width: 100%; // Ensure content does not exceed the screen width
+}
+
+.apartmentsLeft,
+.apartmentsRight {
+  max-width: 48%;
+}
+
+.apartmentsLeft img,
+.apartmentsRight img {
+  width: 100%; /* Make images fill their containers */
+  height: auto;
+  display: block; /* Ensure no inline spacing between images */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any padding */
+}
+
+.images2 {
+  display: flex;
+  justify-content: space-between; /* Align images side by side */
+  gap: 0; /* Remove any gaps between images */
+}
+
+.images2 div {
+  width: 50%; /* Equal width for images within .images2 */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+}
+
+.blog {
+  margin-top: 100px;
+}
+
+.blogCards {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between; /* Stack the blog cards side by side */
+}
+
+.blogCard {
+  margin-top: 50px;
+  border: 1px solid #000;
+
+  background-color: #fff;
+  padding: 30px;
+}
+
+.blogCardImage {
+  width: 100%;
+}
+
+.blogCardContentLink:hover {
+  color: #ff3334;
+  transition: 0.5s;
+}
